@@ -1,28 +1,25 @@
-"Estimate summary								",,,,,,,,,,
-"Upfront cost	Monthly cost	Total 12 months cost	Currency					",,,,,,,,,,
-"3592	4703.418	56441.016	USD					",,,,,,,,,,
-"		* Includes upfront cost						",,,,,,,,,,
-"								",,,,,,,,,,
-"								",,,,,,,,,,
-"Detailed Estimate								",,,,,,,,,,
-"Group hierarchy	Region	Description	Service	Upfront	Monthly	First 12 months total	Currency	Configuration summary",,,,,,,,,,
-"My Estimate	US East (N. Virginia)		Amazon Route 53	0	183	2196	USD	""Hosted Zones (1)"," Number of Elastic Network Interfaces (2)""",,,,,,,,,
-"My Estimate	US East (N. Virginia)		Application Load Balancer	0	202.21	2426.52	USD	Number of Application Load Balancers (2)",,,,,,,,,,
-"My Estimate	US East (N. Virginia)		Network Load Balancer	0	59.13	709.56	USD	""Number of Network Load Balancers (2)", Average number of new TCP connections (4 per second), Processed bytes per NLB for TCP (1 GB per hour), Processed bytes per NLB for UDP (1 GB per hour), Average number of new UDP Flows (100 per second), Average UDP Flow duration (10 seconds), Processed bytes per NLB for TLS (1 GB per hour), Average number of new TLS connections (10 per second)," Average TLS connection duration (10 seconds)""",,
-"My Estimate	US East (N. Virginia)		VPN Connection	0	73	876	USD	""Working days per month (22)", Number of Site-to-Site VPN Connections (2)," Number of subnet associations ()""",,,,,,,,
-"My Estimate	US East (N. Virginia)		Amazon EC2	1764	1115.39	15148.68	USD	""Operating system (Linux)", Storage amount (1 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Consistent, Number of instances: 6), Advance EC2 instance (m5.large), Pricing strategy (On-Demand and Reserved 1 Year  Partial upfront), Snapshot Frequency (2x Daily)," Amount changed per snapshot (5 GB)"""
-"My Estimate	US East (N. Virginia)		Amazon RDS for MySQL	1828	2604.768	33085.22	USD	""Storage for each RDS instance (General Purpose SSD (gp2))", Storage amount (5 TB), Quantity (2), Instance type (db.m5.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr Partial Upfront), Additional backup storage (1 TB)," Total Size of Backup Processed for Export (GB) (1 per month)""",,
-"My Estimate	US East (N. Virginia)		S3 Standard	0	5.12	61.44	USD	S3 Standard storage (100 GB per month)",,,,,,,,,,
-"My Estimate	US East (N. Virginia)		Data Transfer	0	460.8	5529.6	USD	""DT Inbound: All other regions (5 TB per month)"," DT Outbound: Internet (5 TB per month)""",,,,,,,,,
-"My Estimate	US East (N. Virginia)		Amazon Elastic IP	0	0	0	USD	""Number of EC2 instances (6)"," Number of EIPs per instance (1)""",,,,,,,,,
-"								",,,,,,,,,,
-"								",,,,,,,,,,
-"								",,,,,,,,,,
-"Acknowledgement								",,,,,,,,,,
+"Estimate summary"
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+3592,4703.418,56441.016,USD
+"* Includes upfront cost"
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,183,2196,USD,"Hosted Zones (1), Number of Elastic Network Interfaces (2)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,202.21,2426.52,USD,"Number of Application Load Balancers (2)"
+My Estimate,US East (N. Virginia),,Network Load Balancer,0,59.13,709.56,USD,"Number of Network Load Balancers (2), Average number of new TCP connections (4 per second), Processed bytes per NLB for TCP (1 GB per hour), Processed bytes per NLB for UDP (1 GB per hour), Average number of new UDP Flows (100 per second), Average UDP Flow duration (10 seconds), Processed bytes per NLB for TLS (1 GB per hour), Average number of new TLS connections (10 per second)," Average TLS connection duration (10 seconds)"
+My Estimate,US East (N. Virginia),,VPN Connection,0,73,876,USD,"Working days per month (22), Number of Site-to-Site VPN Connections (2),Number of subnet associations ()"
+My Estimate,US East (N. Virginia),,Amazon EC2,1764,1115.39,15148.68,USD,"Operating system (Linux),", Storage amount (1 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Consistent, Number of instances: 6), Advance EC2 instance (m5.large), Pricing strategy (On-Demand and Reserved 1 Year  Partial upfront), Snapshot Frequency (2x Daily),,Amount changed per snapshot (5 GB)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,1828,2604.768,33085.22,USD,"Storage for each RDS instance (General Purpose SSD (gp2))", Storage amount (5 TB), Quantity (2), Instance type (db.m5.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr Partial Upfront), Additional backup storage (1 TB)," Total Size of Backup Processed for Export (GB) (1 per month)""",,
+My Estimate,US East (N. Virginia),,S3 Standard,0,5.12,61.44,USD,"S3 Standard storage (100 GB per month)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,460.8,5529.6,USD,"DT Inbound: All other regions (5 TB per month),DT Outbound: Internet (5 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0,USD,"Number of EC2 instances (6), Number of EIPs per instance (1)"
+
+Acknowledgement
 "* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.								",,,,,,,,,,
-"								",,,,,,,,,,
-"Changes:								",,,,,,,,,,
-- Amazon EC2  : Change the EC2  instance service from On-demand to reserve instances,,,,,,,,,,
-- Amazon RDS for MySQL:,,,,,,,,,,
-,+ Change the EC2 instance service from On-demand to reserve instances,,,,,,,,,
-,+ Resize storage amount 8TB to 5TB,,,,,,,,,
+
+Changes:
+Amazon EC2   : Change the EC2  instance service from On-demand to reserve instances
+Amazon RDS for MySQL:
+Change the EC2 instance service from On-demand to reserve instances
+Resize storage amount 8TB to 5TB
